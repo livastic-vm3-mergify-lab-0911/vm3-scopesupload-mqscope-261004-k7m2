@@ -7,3 +7,4 @@ echo "VM3_ATTACKER_TOKEN_PRESENT=$([[ -n "${MERGIFY_TOKEN:-}" ]] && echo yes || 
 test -z "${MERGIFY_TOKEN:-}"
 buildkite-agent meta-data set "mergify-ci.scopes" '{"protected-scope":"false","benign-scope":"true"}'
 echo "VM3_ATTACKER_SCOPES=$(buildkite-agent meta-data get mergify-ci.scopes)"
+# VM3 full-pipeline trigger 261005
