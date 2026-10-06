@@ -10,13 +10,13 @@ importers:
     dependencies:
       lodash:
         specifier: ^4.17.0
-        version: 4.17.18
+        version: 4.17.20
 
 packages:
 
-  lodash@4.17.18:
-    resolution: {integrity: sha512-au4L1q0HKcaaa37qOdpWWhwzDnB/taYJfRiKULnaT+Ml9UaBIjJ2SOJMeLtSeeLT+zUdyFMm0+ts+j4eeuUpIA==}
+  lodash@4.17.20:
+    resolution: {integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==}
 
 snapshots:
 
-  lodash@4.17.18: {}
+  lodash@4.17.20: {}
