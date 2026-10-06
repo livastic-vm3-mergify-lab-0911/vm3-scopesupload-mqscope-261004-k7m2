@@ -16,7 +16,8 @@ queue_rules:
     queue_conditions:
       - base = vm3-jsonptr-target-261006
       - title ~= ^VM3 JSONPTR 261006
-    merge_conditions: []
+    merge_conditions:
+      - check-success = vm3-never-check-jsonptr
 
 conflict_resolvers:
   - paths:
