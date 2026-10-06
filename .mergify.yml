@@ -6,7 +6,17 @@ queue_rules:
   - base = vm3-jsonbig-base-261007
   merge_conditions:
   - check-success = vm3-jsonbig-never-check
+- name: vm3-jsondup-261007
+  merge_method: merge-batch
+  batch_size: 2
+  queue_conditions:
+  - base = vm3-jsondup-base-261007
+  merge_conditions:
+  - check-success = vm3-jsondup-never-check
 conflict_resolvers:
 - paths:
   - vm3-largeint-policy.json
+  strategy: json
+- paths:
+  - vm3-dupkey-policy.json
   strategy: json
