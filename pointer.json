@@ -1,1 +1,17 @@
-{"security/mode":{"enabled":false,"tag":"slash"},"security":{"mode":{"enabled":false,"tag":"nested"}},"security~1mode":{"enabled":false,"tag":"tilde"},"control":"base"}
+{
+  "security/mode": {
+    "enabled": false,
+    "tag": "slash"
+  },
+  "security": {
+    "mode": {
+      "enabled": false,
+      "tag": "nested"
+    }
+  },
+  "security~1mode": {
+    "enabled": true,
+    "tag": "tilde-C"
+  },
+  "control": "base"
+}
