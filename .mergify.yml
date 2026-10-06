@@ -1,19 +1,9 @@
-scopes:
-  source:
-    manual:
-
 conflict_resolvers:
   - paths:
       - vm3-json-reorder-policy-r2.json
     strategy: json
 
 queue_rules:
-  - name: vm3-buildkite-meta-scope-guard-261005
-    queue_conditions:
-      - scope != protected-scope
-    merge_conditions:
-      - base = main
-    merge_method: merge
   - name: vm3-crjson-reorder-r2-261007
     merge_method: merge-batch
     batch_size: 2
