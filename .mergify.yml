@@ -1,6 +1,6 @@
 queue_rules:
 - name: vm3-pnpm-samedep-261006
-  merge_method: merge-batch
+  merge_method: fast-forward
   batch_size: 1
   queue_conditions:
   - base = vm3-pnpm-base-261006
