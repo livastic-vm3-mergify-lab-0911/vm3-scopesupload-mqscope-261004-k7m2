@@ -1,0 +1,7 @@
+{
+  "rules": [
+    {"name": "security", "enabled": false, "level": "strict"},
+    {"name": "docs", "enabled": false, "level": "normal"},
+    {"name": "ops", "enabled": false, "level": "normal"}
+  ]
+}
