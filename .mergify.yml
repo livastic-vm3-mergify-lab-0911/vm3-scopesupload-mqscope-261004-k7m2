@@ -9,3 +9,16 @@ queue_rules:
     merge_conditions:
       - base = main
     merge_method: merge
+  - name: vm3-jsonptr-261006
+    merge_method: merge-batch
+    batch_size: 2
+    batch_max_wait_time: 30 seconds
+    queue_conditions:
+      - base = vm3-jsonptr-target-261006
+      - title ~= ^VM3 JSONPTR 261006
+    merge_conditions: []
+
+conflict_resolvers:
+  - paths:
+      - pointer.json
+    strategy: json
