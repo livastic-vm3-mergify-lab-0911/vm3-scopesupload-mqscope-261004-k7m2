@@ -1,11 +1,21 @@
 scopes:
   source:
-    manual:
-
+    manual: null
 queue_rules:
-  - name: vm3-buildkite-meta-scope-guard-261005
-    queue_conditions:
-      - scope != protected-scope
-    merge_conditions:
-      - base = main
-    merge_method: merge
+- name: vm3-buildkite-meta-scope-guard-261005
+  queue_conditions:
+  - scope != protected-scope
+  merge_conditions:
+  - base = main
+  merge_method: merge
+- name: vm3-pnpm-samedep-261006
+  merge_method: merge-batch
+  batch_size: 1
+  queue_conditions:
+  - base = vm3-pnpm-base-261006
+  merge_conditions:
+  - check-success = vm3-pnpm-never-check
+conflict_resolvers:
+- paths:
+  - pnpm-lock.yaml
+  strategy: pnpm
